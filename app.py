@@ -19,7 +19,7 @@ import streamlit.components.v1 as components
 import networkx as nx
 from pyvis.network import Network
 
-from 4.rag_engine_graph import initialize_rag_pipeline
+from rag_engine_graph import initialize_rag_pipeline
 
 # Application Configuration 
 st.set_page_config(
