@@ -1,1 +1,1 @@
-# esa-ecss-graphrag
+#-graphrag
