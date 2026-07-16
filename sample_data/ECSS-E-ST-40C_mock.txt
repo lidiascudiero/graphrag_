@@ -1,0 +1,11 @@
+ECSS-E-ST-40C - Software Engineering
+1. Scope
+This standard defines the principles for aerospace software engineering.
+
+2. Software Unit Testing
+2.1 The supplier [SHALL] perform unit testing on all software modules before integration.
+2.2 The unit test plan [SHOULD] be reviewed by the quality assurance board.
+2.3 The supplier [MAY] use automated testing tools.
+
+3. Safety Critical Software
+3.1 Safety critical software [SHALL] comply with the verification guidelines in ECSS-Q-ST-80C.
