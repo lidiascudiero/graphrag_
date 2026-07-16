@@ -7,3 +7,6 @@ pypdf
 streamlit
 langchain-text-splitters
 huggingface_hub
+pyvis
+networkx
+python-dotenv
