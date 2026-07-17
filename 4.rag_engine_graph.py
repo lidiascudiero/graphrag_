@@ -18,7 +18,7 @@ from langchain_huggingface import HuggingFaceEmbeddings, HuggingFaceEndpoint, Ch
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-from 3.graph_builder import ECSSGraphBuilder  
+from graph_builder import ECSSGraphBuilder  
 
 load_dotenv()
 
