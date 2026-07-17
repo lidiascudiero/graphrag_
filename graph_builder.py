@@ -300,7 +300,12 @@ class ECSSGraphBuilder:
             return False
         with open(path) as f:
             data = json.load(f)
-        self.graph = nx.node_link_graph(data)
+          if 'links' not in data and 'edges' in data:
+            data['links'] = data['edges']
+          elif 'edges' not in data and 'links' in data:
+            data['edges'] = data['links']
+          self.graph = nx.node_link_graph(data)
+      
         print(f"[GRAPH] Loaded from {path} — "
               f"{self.graph.number_of_nodes()} nodes, "
               f"{self.graph.number_of_edges()} edges")
