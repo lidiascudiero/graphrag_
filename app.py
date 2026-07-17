@@ -19,8 +19,12 @@ import streamlit as st
 import streamlit.components.v1 as components
 import networkx as nx
 from pyvis.network import Network
+import sys
+print(f"DEBUG: Current working directory: {os.getcwd()}")
+print(f"DEBUG: Python path: {sys.path}")
 import rag_engine_graph
-hybrid_invoke, retriever, graph_builder = rag_engine_graph.initialize_rag_pipeline()
+print(f"DEBUG: rag_engine_graph content: {dir(rag_engine_graph)}")
+from rag_engine_graph import initialize_rag_pipeline
 
 # Application Configuration 
 st.set_page_config(
