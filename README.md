@@ -33,7 +33,7 @@ The hybrid pipeline is designed to merge semantic similarity with structural awa
 
 While the live demo uses a mocked subset, the architecture was originally tested and validated on a full-scale ECSS corpus. Below are the actual Knowledge Graph telemetry stats from the production environment:
 
-** Knowledge Graph Stats**
+**Knowledge Graph Stats**
 *   **Total Nodes:** 1,700
 *   **Total Edges:** 1,812
 *   **SHALL Requirements:** 1,087
@@ -45,7 +45,7 @@ While the live demo uses a mocked subset, the architecture was originally tested
 *   **Term:** 24
 *   **Standard:** 3
 
-** Advanced Network Metrics**
+**Advanced Network Metrics**
 *   **Graph Density:** `0.0006` *(Indicating a highly specific, sparsely connected normative topology)*
 *   **Top Normative Hubs (Most referenced standards):**
     *    `std:ecss-e-st-40c` (Centrality Score: 0.40)
