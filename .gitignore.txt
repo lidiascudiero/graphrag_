@@ -1,7 +1,4 @@
 .env
-chroma_db/
 real_data/
 __pycache__/
 *.pyc
-query_telemetry.jsonl
-ecss_graph.json
