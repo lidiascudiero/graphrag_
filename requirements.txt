@@ -10,3 +10,5 @@ huggingface_hub
 pyvis
 networkx
 python-dotenv
+torch
+torchvision
