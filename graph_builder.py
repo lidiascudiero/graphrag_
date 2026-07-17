@@ -294,18 +294,21 @@ class ECSSGraphBuilder:
             json.dump(data, f)
         print(f"[GRAPH] Saved to {path}")
 
-    def load(self, path: Path = GRAPH_CACHE) -> bool:
+   def load(self, path: Path = GRAPH_CACHE) -> bool:
         """Load the graph from disk. Returns True if the file exists."""
         if not Path(path).exists():
             return False
         with open(path) as f:
             data = json.load(f)
-          if 'links' not in data and 'edges' in data:
+            
+        
+        if 'links' not in data and 'edges' in data:
             data['links'] = data['edges']
-          elif 'edges' not in data and 'links' in data:
+        elif 'edges' not in data and 'links' in data:
             data['edges'] = data['links']
-          self.graph = nx.node_link_graph(data)
-      
+            
+        self.graph = nx.node_link_graph(data)
+        
         print(f"[GRAPH] Loaded from {path} — "
               f"{self.graph.number_of_nodes()} nodes, "
               f"{self.graph.number_of_edges()} edges")
