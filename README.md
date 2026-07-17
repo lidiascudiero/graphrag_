@@ -14,20 +14,20 @@ The proprietary industrial datasets and the full compiled databases are strictly
 
 ## Project Overview
 
-This project focuses on resolving the critical limitations of standard Vector-based RAG (Retrieval-Augmented Generation) when applied to rigid aerospace engineering standards (ECSS)[cite: 5]. 
+This project focuses on resolving the critical limitations of standard Vector-based RAG (Retrieval-Augmented Generation) when applied to rigid aerospace engineering standards (ECSS). 
 
 ### The Industrial Challenge:
-*   **Semantic Ambiguity:** Standard vector searches fail when a requirement states *"Testing shall be performed as per §5.3"*, because the actual testing parameters are structurally linked, not semantically similar[cite: 4, 5].
-*   **Deontic Rigidity:** Aerospace compliance relies on the strict categorization of modal verbs (SHALL for mandatory, SHOULD for recommended, MAY for optional)[cite: 2]. Vector spaces do not inherently differentiate these constraints.
+*   **Semantic Ambiguity:** Standard vector searches fail when a requirement states *"Testing shall be performed as per §5.3"*, because the actual testing parameters are structurally linked, not semantically similar.
+*   **Deontic Rigidity:** Aerospace compliance relies on the strict categorization of modal verbs (SHALL for mandatory, SHOULD for recommended, MAY for optional). Vector spaces do not inherently differentiate these constraints.
 *   **Cross-Referencing:** Navigating a real-world scenario requires understanding multi-hop dependencies across different engineering domains (e.g., Software Engineering vs. Quality Assurance).
 
 ## System Architecture
 
-The hybrid pipeline is designed to merge semantic similarity with structural awareness[cite: 5]:
+The hybrid pipeline is designed to merge semantic similarity with structural awareness:
 
 1.  **Semantic Layer (Vector Store):** High-performance chunk querying via ChromaDB and Hugging Face Embeddings (`all-mpnet-base-v2`)[cite: 2, 5].
-2.  **Structural Layer (Knowledge Graph):** An in-memory NetworkX directed graph extracting hierarchies (`Standard → Section → Requirement`) and cross-references (`REFERENCES`, `DEFINES`)[cite: 2].
-3.  **Intelligence Layer:** A unified prompt merging Vector Context and Graph-Retrieved Context, parsed by the `Qwen/Qwen2.5-7B-Instruct` LLM[cite: 5].
+2.  **Structural Layer (Knowledge Graph):** An in-memory NetworkX directed graph extracting hierarchies (`Standard → Section → Requirement`) and cross-references (`REFERENCES`, `DEFINES`).
+3.  **Intelligence Layer:** A unified prompt merging Vector Context and Graph-Retrieved Context, parsed by the `Qwen/Qwen2.5-7B-Instruct` LLM.
 
 ## Real-World Production Metrics
 
