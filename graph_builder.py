@@ -284,8 +284,7 @@ class ECSSGraphBuilder:
             "shall_reqs":  shall,
             "should_reqs": should,
         }
-
-    # Persistence
+      # Persistence
 
     def save(self, path: Path = GRAPH_CACHE):
         """Save the graph to disk as JSON (avoids rebuild on every startup)."""
@@ -294,7 +293,7 @@ class ECSSGraphBuilder:
             json.dump(data, f)
         print(f"[GRAPH] Saved to {path}")
 
-   def load(self, path: Path = GRAPH_CACHE) -> bool:
+    def load(self, path: Path = GRAPH_CACHE) -> bool:
         """Load the graph from disk. Returns True if the file exists."""
         if not Path(path).exists():
             return False
@@ -313,3 +312,4 @@ class ECSSGraphBuilder:
               f"{self.graph.number_of_nodes()} nodes, "
               f"{self.graph.number_of_edges()} edges")
         return True
+    
