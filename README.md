@@ -2,11 +2,11 @@
 
 Transitioning from Flat Text Search to Topologically-Aware AI for Aerospace Standards
 
-## Professional Disclaimer (NDA & Privacy)
+## Professional Disclaimer (NDA)
 
-To comply with Non-Disclosure Agreements (NDAs) and copyright restrictions regarding the official European Cooperation for Space Standardization (ECSS) corpus, the source code in this repository runs on a **Mock Dataset**. 
+*To comply with Non-Disclosure Agreements (NDAs) and copyright restrictions regarding the official European Cooperation for Space Standardization (ECSS) corpus, the source code in this repository runs on a **Mock Dataset**. 
 
-The proprietary industrial datasets and the full compiled databases are strictly confidential and are not included in this repository. However, the architectural logic, the knowledge graph extraction pipeline, and the metrics discussed in this documentation reflect the real-world deployment of the system tested on the complete normative corpus.
+The proprietary industrial datasets and the full compiled databases are strictly confidential and are not included in this repository. However, the architectural logic, the knowledge graph extraction pipeline, and the metrics discussed in this documentation reflect the real-world deployment of the system tested on the complete normative corpus.*
 
 ## The "Cognitive" Angle: From Flat Text to Normative Networks
 
