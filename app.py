@@ -8,9 +8,8 @@ This application extends the base RAG architecture with a GraphRAG approach:
   - Sidebar: Real-time network structural stats, hubs, and LLMOps viewer.
 """
 
-import sys
+
 import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import json
 import time
 from datetime import datetime
