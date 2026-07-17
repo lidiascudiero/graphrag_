@@ -298,10 +298,10 @@ class ECSSGraphBuilder:
         """Load the graph from disk. Returns True if the file exists."""
         if not Path(path).exists():
             return False
+        
         with open(path) as f:
             data = json.load(f)
             
-        
         if 'links' not in data and 'edges' in data:
             data['links'] = data['edges']
         elif 'edges' not in data and 'links' in data:
