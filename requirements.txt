@@ -8,7 +8,7 @@ streamlit
 langchain-text-splitters
 huggingface_hub
 pyvis
-networkx
+networkx==3.2.1
 python-dotenv
 torch
 torchvision
