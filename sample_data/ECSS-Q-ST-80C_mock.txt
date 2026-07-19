@@ -1,7 +1,0 @@
-ECSS-Q-ST-80C - Software Product Assurance
-1. Scope
-This document outlines the quality assurance metrics for space systems.
-
-2. Verification Guidelines
-2.1 All test results [SHALL] be logged in the centralized repository.
-2.2 The QA team [SHOULD] conduct audits every milestone.
