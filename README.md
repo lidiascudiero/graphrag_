@@ -12,8 +12,7 @@ Transitioning from Flat Text Search to Topologically-Aware AI for Aerospace Stan
 ---
 ## The Cognitive Angle: From Flat Text to Normative Networks
 
-> **Author's Note:** My background in Cognitive Psychology and Neuroscience allows me to treat complex regulatory frameworks not as isolated paragraphs, but as interconnected semantic networks. Just as neural pathways define cognitive functions through their connections, an aerospace standard defines compliance through its structural cross-references. By implementing a Knowledge Graph alongside a Vector Database, I apply a rigorous structural mindset to information retrieval treating every ECSS requirement as a node in a broader "normative behavior" profile.
-
+> **Author's Note:** My background in Cognitive Psychology and Neuroscience influenced the design of the retrieval architecture by emphasizing relational rather than purely lexical representations of knowledge.and  allowed s me to treat complex regulatory frameworks not as isolated paragraphs, but as interconnected semantic networks. Just as neural pathways define cognitive functions through their connections, an aerospace standard defines compliance through its structural cross-references. By implementing a Knowledge Graph alongside a Vector Database, I apply a rigorous structural mindset to information retrieval treating every ECSS requirement as a node in a broader "normative behavior" profile.
 ## Project Overview
 
 This project focuses on resolving the critical limitations of standard Vector-based RAG (Retrieval-Augmented Generation) when applied to rigid aerospace engineering standards (ECSS). 
