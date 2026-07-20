@@ -13,3 +13,4 @@ networkx
 python-dotenv
 torch
 torchvision
+gradio
