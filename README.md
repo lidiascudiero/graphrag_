@@ -1,8 +1,6 @@
 | Project | Domain | Tech Stack | Highlights |
 | :--- | :--- | :--- | :--- |
-| **[ECSS Compliance RAG Engine](inserisci-qui-il-link)** | **Aerospace Standards (ECSS).** Overcoming semantic ambiguity and deontic rigidity (SHALL/SHOULD) in complex regulatory frameworks. | **Data Engine:** NetworkX, ChromaDB.<br>**ML/LLM:** LangChain, Hugging Face (Qwen2.5), Sentence-Transformers.<br>**Visuals:** Streamlit, Pyvis. | Developed a **Hybrid RAG Pipeline** merging semantic vector search with a **Normative Document Graph**. Built an interactive **Sub-graph Explorer** ensuring **grounded retrieval** and resolving topological normative cross-references. |
 
-***
 
 # ECSS Compliance RAG Engine: Hybrid Graph-Vector Architecture
 *Transitioning from Flat Text Search to Topologically-Aware AI for Aerospace Standards*
