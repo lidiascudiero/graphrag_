@@ -60,7 +60,7 @@ While the live demo uses a mocked subset, the architecture was originally tested
 Experience the Hybrid Retrieval pipeline in real-time through a dedicated Streamlit application. This dashboard simulates a live compliance verification session, visualizing how both vector and graph contexts are extracted.
 
 ### Hybrid Decoding & Graph Traversal Simulation
-*[**Access the Streamlit Dashboard:**](https://graphrag-5dtyywqq7znkyxvp8vgccd.streamlit.app/)
+[**Access the Streamlit Dashboard**](https://graphrag-5dtyywqq7znkyxvp8vgccd.streamlit.app/)
 *   **Real-Time Simulation:** observe the generation process as the agent processes your query across two branches (Vector + Graph) and synthesizes a compliance report distinguishing SHALL and SHOULD requirements.
 *   **Interactive Subgraph Visualization:** view the local ego-graph generated for your query using the Pyvis visualizer to verify how requirements cross-reference each other.
 *   **Explainability Trace (Vector vs Graph):** inspect the dedicated comparison tab to see exactly which "Seed Nodes" were triggered by the vector search, and which hidden normative dependencies were successfully "Discovered" via topological expansion.
