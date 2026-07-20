@@ -78,6 +78,16 @@ Experience the Hybrid Retrieval pipeline in real-time through a dedicated Stream
 *   **Explainability & Grounded Retrieval:** Replaced absolute "zero hallucination" concepts with strict Grounded Retrieval mechanisms. Integrated UI components to trace every LLM assertion back to the exact ECSS standard, distinguishing between semantic hits and topological discoveries.
 *   **Built-in LLMOps:** Implemented a lightweight telemetry logger to track latency, retrieved graph nodes, and user queries for continuous system evaluation.
 
+ ## Future Roadmap and Extensions
+
+To further scale the architecture and enhance its capabilities for enterprise aerospace environments, the following extensions are considered for future releases:
+
+*   **Scalable Graph Infrastructure:** Migration from the in-memory `NetworkX` topology to a dedicated, persistent Graph Database (e.g., **Neo4j** or **Memgraph**). This will allow the ingestion of cross-agency standards (e.g., NASA, MIL-STD, ISO, DO-178C) pushing the node count beyond 100k+ while maintaining low-latency traversal.
+*   **Multi-Modal RAG (Vision & Tables):** Aerospace standards heavily rely on decision trees, flowcharts, and compliance tables. Integrating Vision-Language Models (VLMs) and advanced document parsers (like `LlamaParse` or `Unstructured`) will allow the graph to map visual and tabular dependencies alongside textual requirements.
+*   **Agentic Compliance Workflows:** Transitioning from a single-prompt hybrid retrieval to a multi-agent architecture (using **LangGraph** or **CrewAI**). A specialized *Retrieval Agent* could navigate the topology, while a *Critique Agent* cross-checks a user's provided System Design Document against the retrieved ECSS baseline to flag compliance gaps.
+*   **Automated Compliance Matrix Export:** Implementing a downstream pipeline to automatically generate, populate, and export industry-standard Verification Control Documents (VCD) or Requirements Traceability Matrices (RTM) in `.xlsx` or `.csv` formats directly from the chat interface.
+*   **Advanced Entity Extraction (NER):** Augmenting the current deterministic Regex parser with a hybrid extraction pipeline using lightweight NLP models (e.g., `spaCy`, `GLiNER`). This will build a richer semantic ontology, allowing the graph to map abstract requirements to specific physical entities (e.g., linking a *SHALL* constraint directly to a *Hardware Component* or *Software Interface*).
+
 ## Tech Stack
 *   **Data Engine:** Python, NetworkX, ChromaDB
 *   **Machine Learning / LLM:** LangChain, Hugging Face Endpoint (`Qwen2.5-7B`), Sentence-Transformers
