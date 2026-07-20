@@ -1,7 +1,3 @@
-| Project | Domain | Tech Stack | Highlights |
-| :--- | :--- | :--- | :--- |
-
-
 # ECSS Compliance RAG Engine: Hybrid Graph-Vector Architecture
 *Transitioning from Flat Text Search to Topologically-Aware AI for Aerospace Standards*
 
